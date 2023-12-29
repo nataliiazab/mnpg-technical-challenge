@@ -1,14 +1,17 @@
 import React, { useState, useEffect } from "react";
-import "./App.css";
+import "./assets/styles/App.css";
 import Card from "./components/Card";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 const App = () => {
-  const url = "https://moonpig.github.io/tech-test-frontend/search.json";
+  const searchCardsURL = "https://moonpig.github.io/tech-test-frontend/search.json";
   const [data, setData] = useState([]);
   const fetchInfo = () => {
-    return fetch(url)
+    return fetch(searchCardsURL)
       .then((res) => res.json())
-      .then((d) => setData(d));
+      .then((data) => setData(data))
+      .catch((error) => console.error("Error fetching data:", error));
   };
 
   useEffect(() => {
@@ -17,20 +20,21 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1>fetch API</h1>
-      {console.log(data)}
+      <Header />
       <p>Number Of Products: {data.NumberOfProducts}</p>
       {data.Products &&
         data.Products.map((product) => (
-          <div key={product.ProductId}>
+          <div className="cards-container" key={product.ProductId}>
             <Card
               title={product.Title}
               price={product.Price}
               description={product.Description}
               imageUrl={product.ProductImage.Link.Href}
+              id={product.MoonpigProductNo}
             />
           </div>
         ))}
+      <Footer />
     </div>
   );
 };
