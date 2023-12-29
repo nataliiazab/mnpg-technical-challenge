@@ -22,13 +22,14 @@ const App = () => {
       <p>Number Of Products: {data.NumberOfProducts}</p>
       {data.Products &&
         data.Products.map((product) => (
-          <Card
-            key={product.ProductId} // Use a unique key for each product
-            title={product.Title}
-            price={product.Price.Value}
-            description={product.Description}
-            imageUrl={product.ProductImage.Link.Href}
-          />
+          <div key={product.ProductId}>
+            <Card
+              title={product.Title}
+              price={product.Price}
+              description={product.Description}
+              imageUrl={product.ProductImage.Link.Href}
+            />
+          </div>
         ))}
     </div>
   );
