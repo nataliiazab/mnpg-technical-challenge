@@ -1,11 +1,15 @@
 .cards-container {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .card-container {
-  width: 300px;
+  width: 400px;
+  height: 400px;
+  margin: 10px;
   border: 1px solid red;
+}
+
+.card-container img {
+  width: 100px;
 }

@@ -14,7 +14,7 @@ const Card = ({ title, price, description, imageUrl, id }) => {
     fetchInfo();
   }, []);
   return (
-    <div className="card-container">
+    <div>
       <p>Title: {title}</p>
       <p>
         Price: {price.Value}
