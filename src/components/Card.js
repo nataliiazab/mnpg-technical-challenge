@@ -1,24 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "../assets/styles/Card.css";
+import { Link } from "react-router-dom";
 
-const Card = ({ title, price, description, imageUrl, id }) => {
-  const viewCardURL = `https://moonpig.github.io/tech-test-frontend/product/${id}.json`;
-  const [data, setData] = useState([]);
-  const fetchInfo = () => {
-    return fetch(viewCardURL)
-      .then((res) => res.json())
-      .then((data) => setData(data))
-      .catch((error) => console.error("Error fetching data:", error));
-  };
-  useEffect(() => {
-    fetchInfo();
-  }, []);
+const Card = ({ title, price, imageUrl, id }) => {
   return (
     <div className="card-component-container">
       <div className="card-title-container">
         <p className="card-title">{title}</p>
       </div>
-      {/* <p className="card-description">Description: {description}</p> */}
       <div className="card-image-container">
         <img className="card-image" src={imageUrl} alt={title} />
       </div>
@@ -27,8 +16,9 @@ const Card = ({ title, price, description, imageUrl, id }) => {
           Price: {price.Value}
           {price.Currency}
         </p>
-        <button className="card-button" onClick={() => console.log(data.Name)}>
-          More Info
+        <button className="card-button" onClick={() => console.log(id)}>
+          {" "}
+          <Link to={`/card/${id}`}>More Info</Link>
         </button>
       </div>
     </div>

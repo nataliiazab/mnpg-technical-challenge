@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import About from "components/About";
 import Basket from "components/Basket";
+import CardDetails from "components/CardDetails";
 
 const App = () => {
   const searchCardsURL =
@@ -55,6 +56,7 @@ const App = () => {
 
           <Route path="/about" element={<About />} />
           <Route path="/basket" element={<Basket />} />
+          <Route path="/card/:id" element={<CardDetails />} />
         </Routes>
         <Footer />
       </BrowserRouter>
