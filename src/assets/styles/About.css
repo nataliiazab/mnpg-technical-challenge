@@ -1,0 +1,19 @@
+.about-container {
+  margin: 0 auto;
+  width: 50%;
+  padding-bottom: 50px;
+}
+
+.about-container h2,
+h3 {
+  text-align: center;
+}
+
+.about-container h2 {
+  font-size: 2rem;
+  
+}
+
+.about-container p {
+  color: #666666;
+}

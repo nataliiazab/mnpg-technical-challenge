@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./assets/styles/App.css";
 import Card from "./components/Card";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import About from "components/About";
+import Basket from "components/Basket";
 
 const App = () => {
   const searchCardsURL =
@@ -24,29 +26,38 @@ const App = () => {
     <div className="App">
       <BrowserRouter>
         <Header />
-      </BrowserRouter>
-
-      <div className="cards-container">
-        <h1>
-          {" "}
-          At Moonpig we've got greetings cards for every single occasion.{" "}
-        </h1>
-        <div className="cards">
-          {data.Products &&
-            data.Products.map((product) => (
-              <div className="card-container" key={product.ProductId}>
-                <Card
-                  title={product.Title}
-                  price={product.Price}
-                  description={product.Description}
-                  imageUrl={product.ProductImage.Link.Href}
-                  id={product.MoonpigProductNo}
-                />
+        <Routes>
+          <Route
+            path="/cards"
+            element={
+              <div className="cards-container">
+                <h1>
+                  {" "}
+                  At Moonpig we've got greetings cards for every single occasion
+                </h1>
+                <div className="cards">
+                  {data.Products &&
+                    data.Products.map((product) => (
+                      <div className="card-container" key={product.ProductId}>
+                        <Card
+                          title={product.Title}
+                          price={product.Price}
+                          description={product.Description}
+                          imageUrl={product.ProductImage.Link.Href}
+                          id={product.MoonpigProductNo}
+                        />
+                      </div>
+                    ))}
+                </div>
               </div>
-            ))}
-        </div>
-      </div>
-      <Footer />
+            }
+          />
+
+          <Route path="/about" element={<About />} />
+          <Route path="/basket" element={<Basket />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 };

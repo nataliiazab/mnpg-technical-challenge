@@ -1,0 +1,7 @@
+.basket-container {
+  height: 600px;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
