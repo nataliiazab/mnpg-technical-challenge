@@ -6,7 +6,7 @@ import SimpleImageSlider from "react-simple-image-slider";
 const CardDetails = () => {
   const { id } = useParams();
   const [data, setData] = useState(null);
-  const [sliderIndex, setSliderIndex] = useState(0);
+  const [sliderIndex, setSliderIndex] = useState(1);
 
   useEffect(() => {
     const fetchCardDetails = async () => {
@@ -48,11 +48,10 @@ const CardDetails = () => {
               images={data.ImageUrls.map((image) => ({ url: image.ImageUrl }))}
               showBullets={true}
               showNavs={true}
-              
-              onStartSlide={(index) => setSliderIndex(index)} 
+              onStartSlide={(index) => setSliderIndex(index)}
             />
-            <div style={{ fontSize: "1.5rem" }}>
-              The current image slide No is {sliderIndex + 1}.
+            <div style={{ fontSize: "1rem" }}>
+              The current image slide No is {sliderIndex}.
             </div>
           </div>
 
