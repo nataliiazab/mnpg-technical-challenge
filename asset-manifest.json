@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/mnpg-technical-challenge/static/css/main.43c0ea4f.css",
+    "main.js": "/mnpg-technical-challenge/static/js/main.ad38cb95.js",
+    "static/js/787.933521ff.chunk.js": "/mnpg-technical-challenge/static/js/787.933521ff.chunk.js",
+    "index.html": "/mnpg-technical-challenge/index.html",
+    "main.43c0ea4f.css.map": "/mnpg-technical-challenge/static/css/main.43c0ea4f.css.map",
+    "main.ad38cb95.js.map": "/mnpg-technical-challenge/static/js/main.ad38cb95.js.map",
+    "787.933521ff.chunk.js.map": "/mnpg-technical-challenge/static/js/787.933521ff.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.43c0ea4f.css",
+    "static/js/main.ad38cb95.js"
+  ]
+}
