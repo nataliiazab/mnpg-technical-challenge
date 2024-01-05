@@ -1,42 +1,47 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import Hamburger from "hamburger-react";
 import "../assets/styles/Header.css";
 
 const Header = () => {
   const [showNavbar, setShowNavbar] = useState(false);
+  const [isOpen, setOpen] = useState(false);
 
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar);
+    setOpen(!isOpen);
   };
 
   return (
-    <div>
+    <div className="header">
       <div className="top-header">Frontend Technical Challenge</div>
       <div>
         <nav className="navbar">
           <div className="container">
             <div className="logo">
-              moonpig <span> | Creating Moments that Matter</span>
+              <div className="logo-company">moonpig</div>
+              <div className="logo-space">|</div>
+              <div className="logo-slogan">Creating Moments that Matter</div>
             </div>
           </div>
           <div className="menu-icon" onClick={handleShowNavbar}>
-            Hamburgericon
+            <Hamburger toggled={isOpen} toggle={setOpen} />
           </div>
           <div className={`nav-elements ${showNavbar ? "active" : ""}`}>
             <ul>
               <li>
                 <NavLink to="/cards" onClick={handleShowNavbar}>
-                  Cards
+                  CARDS
                 </NavLink>
               </li>
               <li>
                 <NavLink to="/about" onClick={handleShowNavbar}>
-                  About
+                  ABOUT
                 </NavLink>
               </li>
               <li>
                 <NavLink to="/contact" onClick={handleShowNavbar}>
-                  Contact
+                  CONTACT
                 </NavLink>
               </li>
             </ul>

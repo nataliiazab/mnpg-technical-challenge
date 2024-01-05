@@ -26,20 +26,25 @@ const App = () => {
         <Header />
       </BrowserRouter>
 
-      <p>Number Of Products: {data.NumberOfProducts}</p>
       <div className="cards-container">
-        {data.Products &&
-          data.Products.map((product) => (
-            <div className="card-container" key={product.ProductId}>
-              <Card
-                title={product.Title}
-                price={product.Price}
-                description={product.Description}
-                imageUrl={product.ProductImage.Link.Href}
-                id={product.MoonpigProductNo}
-              />
-            </div>
-          ))}
+        <h1>
+          {" "}
+          At Moonpig we've got greetings cards for every single occasion.{" "}
+        </h1>
+        <div className="cards">
+          {data.Products &&
+            data.Products.map((product) => (
+              <div className="card-container" key={product.ProductId}>
+                <Card
+                  title={product.Title}
+                  price={product.Price}
+                  description={product.Description}
+                  imageUrl={product.ProductImage.Link.Href}
+                  id={product.MoonpigProductNo}
+                />
+              </div>
+            ))}
+        </div>
       </div>
       <Footer />
     </div>
