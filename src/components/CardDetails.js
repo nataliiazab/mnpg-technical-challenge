@@ -51,7 +51,7 @@ const CardDetails = () => {
               onStartSlide={(index) => setSliderIndex(index)}
             />
             <div style={{ fontSize: "1rem" }}>
-              The current image slide No is {sliderIndex}.
+              {sliderIndex}/{data.ImageUrls.length}
             </div>
           </div>
 
