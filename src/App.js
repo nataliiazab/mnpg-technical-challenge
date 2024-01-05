@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import "./assets/styles/App.css";
 import Card from "./components/Card";
 import Header from "./components/Header";
@@ -25,7 +25,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <BrowserRouter>
+      <Router>
         <Header />
         <Routes>
           <Route
@@ -59,7 +59,7 @@ const App = () => {
           <Route path="/card/:id" element={<CardDetails />} />
         </Routes>
         <Footer />
-      </BrowserRouter>
+      </Router>
     </div>
   );
 };
