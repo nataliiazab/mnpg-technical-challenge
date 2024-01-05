@@ -5,7 +5,7 @@ import Card from "./components/Card";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import About from "components/About";
-import Basket from "components/Basket";
+import Basket from "components/Basket/Basket.js";
 import CardDetails from "components/CardDetails";
 
 const App = () => {

@@ -18,7 +18,7 @@ const Card = ({ title, price, imageUrl, id }) => {
         </p>
         <button className="card-button" onClick={() => console.log(id)}>
           {" "}
-          <Link to={`/card/${id}`}>More Info</Link>
+          <Link to={`/card/${id}`} className="card-button-link">More Info</Link>
         </button>
       </div>
     </div>

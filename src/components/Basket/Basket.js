@@ -1,4 +1,4 @@
-import "../assets/styles/Basket.css";
+import "../../assets/styles/Basket.css";
 
 const Basket = () => {
   return (

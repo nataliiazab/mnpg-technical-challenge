@@ -1,10 +1,12 @@
 // In CardDetails component
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import SimpleImageSlider from "react-simple-image-slider";
 
 const CardDetails = () => {
   const { id } = useParams();
   const [data, setData] = useState(null);
+  const [sliderIndex, setSliderIndex] = useState(0);
 
   useEffect(() => {
     const fetchCardDetails = async () => {
@@ -40,10 +42,18 @@ const CardDetails = () => {
           <h2>Description: {data.Description}</h2>
 
           <div>
-            <p>Images</p>
-            {data.ImageUrls.map((image, index) => (
-              <img key={index} src={image.ImageUrl} alt={`Image ${index}`} />
-            ))}
+            <SimpleImageSlider
+              width={300}
+              height={450}
+              images={data.ImageUrls.map((image) => ({ url: image.ImageUrl }))}
+              showBullets={true}
+              showNavs={true}
+              
+              onStartSlide={(index) => setSliderIndex(index)} 
+            />
+            <div style={{ fontSize: "1.5rem" }}>
+              The current image slide No is {sliderIndex + 1}.
+            </div>
           </div>
 
           <div>
