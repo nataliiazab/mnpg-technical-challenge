@@ -28,12 +28,12 @@ const Footer = () => {
           <p className="social-media-links">Social Media Links</p>
           <ul>
             <li>
-              <a href="https://twitter.com/MoonpigUK" target="_blank">
+              <a href="https://twitter.com/moonpiguk" target="_blank">
                 <FaTwitter size={30} />
               </a>
             </li>
             <li>
-              <a href="https://www.facebook.com/MoonpigUK/" target="_blank">
+              <a href="https://www.facebook.com/Moonpig/" target="_blank">
                 <FaFacebook size={30} />
               </a>
             </li>
@@ -48,7 +48,10 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="https://www.youtube.com/user/MoonpigUK" target="_blank">
+              <a
+                href="https://www.pinterest.co.uk/moonpiggroup/"
+                target="_blank"
+              >
                 <FaYoutube size={30} />
               </a>
             </li>
