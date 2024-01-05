@@ -28,7 +28,7 @@ const App = () => {
         <Header />
         <Routes>
           <Route
-            path="/cards"
+            path="/"
             element={
               <div className="cards-container">
                 <h1>

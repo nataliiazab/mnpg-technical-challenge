@@ -20,7 +20,7 @@ const Header = () => {
         <nav className="navbar">
           <div className="container">
             <div className="logo">
-              <NavLink to="/cards" className="logo">
+              <NavLink to="/" className="logo">
                 <div className="logo-company">moonpig</div>
                 <div className="logo-space">|</div>
                 <div className="logo-slogan">Creating Moments that Matter</div>
@@ -33,7 +33,7 @@ const Header = () => {
           <div className={`nav-elements ${showNavbar ? "active" : ""}`}>
             <ul>
               <li>
-                <NavLink to="/cards" onClick={handleShowNavbar}>
+                <NavLink to="/" onClick={handleShowNavbar}>
                   CARDS
                 </NavLink>
               </li>
