@@ -1,0 +1,127 @@
+.card-details-container {
+  background-color: #dfcee9;
+}
+
+.card-details-container h1 {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.card-image-and-information {
+  display: flex;
+  flex-direction: row;
+}
+.image-slider {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.sliderCount {
+  font-weight: bold;
+  margin-top: 5px;
+}
+.card-information {
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-information-headers {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.available-sizes-header,
+.card-information-headers h2,
+p {
+  font-size: 16px;
+  padding-right: 10px;
+}
+
+.available-sizes {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.available-sizes li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.quantity-per-size-container {
+  margin-left: 10px;
+}
+
+.quantity-per-size-button {
+  text-align: center;
+  border-radius: 20px;
+  font-weight: 700;
+  transition: background-color 0.3s linear, color 0.3s linear;
+  cursor: pointer;
+  background-color: #edf6ff;
+  color: #4c98f7;
+  box-sizing: border-box;
+  border: none;
+  text-decoration: none;
+}
+
+.card-add-to-basket-section {
+  display: flex;
+  flex-direction: row;
+}
+.available-sizes-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.button-add-to-basket {
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.button-add-to-basket button {
+  background-color: #fa5255;
+  border-radius: 17px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 100px;
+  height: 50px;
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 19px;
+  color: #ffffff;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.button-add-to-basket button:hover {
+  background-color: #45090a;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 480px) {
+  .card-image-and-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-add-to-basket-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
