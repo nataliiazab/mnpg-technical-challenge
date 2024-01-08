@@ -17,7 +17,7 @@ const Footer = () => {
           <div className="logo-slogan">Creating Moments that Matter</div>
         </div>{" "}
         <p>
-          To buy cards, please go to the official website{" "}
+          This website is for learning purposes only. To buy cards, please go to the official website{" "}
           <a href="https://www.moonpig.com/uk/">© Moonpig.com</a> Limited 2024.
         </p>
         <p>
