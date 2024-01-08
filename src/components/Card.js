@@ -16,9 +16,15 @@ const Card = ({ title, price, imageUrl, id }) => {
           Price: {price.Value}
           {price.Currency}
         </p>
-        <button className="card-button" onClick={() => console.log(id)}>
+        <button className="card-button">
           {" "}
-          <Link to={`/card/${id}`} className="card-button-link">More Info</Link>
+          <Link
+            to={`/card/${id}`}
+            className="card-button-link"
+            aria-label={`More Info about ${title}`}
+          >
+            More Info
+          </Link>
         </button>
       </div>
     </div>

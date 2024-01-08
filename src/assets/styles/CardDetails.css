@@ -112,6 +112,11 @@ p {
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
 }
 
+.button-add-to-basket button:focus {
+  outline: 2px solid #e01f22; 
+  outline-offset: 4px; 
+}
+
 @media (max-width: 480px) {
   .card-image-and-information {
     display: flex;

@@ -53,3 +53,8 @@
   background-color: #45090a;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
 }
+
+.card-button:focus {
+  outline: 2px solid #e01f22;
+  outline-offset: 4px;
+}
