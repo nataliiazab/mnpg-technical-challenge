@@ -4,8 +4,6 @@ import SimpleImageSlider from "react-simple-image-slider";
 import "../assets/styles/CardDetails.css";
 import { useMediaQuery } from "react-responsive";
 
-
-
 const CardDetails = () => {
   const isDesktop = useMediaQuery({ minWidth: 768 });
   const { id } = useParams();
@@ -147,7 +145,7 @@ const CardDetails = () => {
                   alert("Basket functionality is not available right now.");
                 }}
               >
-                Add to Basket
+                Buy Me
               </button>
             </div>
           </div>

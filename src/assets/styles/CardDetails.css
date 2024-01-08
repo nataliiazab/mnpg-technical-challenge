@@ -124,4 +124,15 @@ p {
     flex-direction: column;
     align-items: center;
   }
+
+  .available-sizes li {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+
+  }
+
+  .quantity-per-size-container {
+    margin-left: 0px;
+  }
 }
