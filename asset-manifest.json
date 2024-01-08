@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/mnpg-technical-challenge/static/css/main.3f470d68.css",
-    "main.js": "/mnpg-technical-challenge/static/js/main.80110bef.js",
+    "main.css": "/mnpg-technical-challenge/static/css/main.36e5d855.css",
+    "main.js": "/mnpg-technical-challenge/static/js/main.f729c92f.js",
     "static/js/787.933521ff.chunk.js": "/mnpg-technical-challenge/static/js/787.933521ff.chunk.js",
     "index.html": "/mnpg-technical-challenge/index.html",
-    "main.3f470d68.css.map": "/mnpg-technical-challenge/static/css/main.3f470d68.css.map",
-    "main.80110bef.js.map": "/mnpg-technical-challenge/static/js/main.80110bef.js.map",
+    "main.36e5d855.css.map": "/mnpg-technical-challenge/static/css/main.36e5d855.css.map",
+    "main.f729c92f.js.map": "/mnpg-technical-challenge/static/js/main.f729c92f.js.map",
     "787.933521ff.chunk.js.map": "/mnpg-technical-challenge/static/js/787.933521ff.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3f470d68.css",
-    "static/js/main.80110bef.js"
+    "static/css/main.36e5d855.css",
+    "static/js/main.f729c92f.js"
   ]
 }
